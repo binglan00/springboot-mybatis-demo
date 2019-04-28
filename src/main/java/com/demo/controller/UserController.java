@@ -14,7 +14,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = {"/findAll"},produces = {"application/json;charset=UTF-8"},method = RequestMethod.GET)
+    @RequestMapping(value = {"/findAllPerson"},produces = {"application/json;charset=UTF-8"},method = RequestMethod.GET)
     public List getAllUsers(){
         List list =  userService.findAllUser();
         return list;
